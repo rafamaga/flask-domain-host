@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obter Domínio e Host</title>
+    <script>
+        function showDomainAndHost() {
+            const domain = window.location.hostname; // Obtém o domínio
+            const host = window.location.host;       // Obtém o host (inclui o número da porta se existir)
+            
+            document.getElementById('domain').textContent = domain;
+            document.getElementById('host').textContent = host;
+        }
+    </script>
+</head>
+<body onload="showDomainAndHost()">
+    <h1>Informações da Aplicação</h1>
+    <p><strong>Domínio:</strong> <span id="domain"></span></p>
+    <p><strong>Host:</strong> <span id="host"></span></p>
+</body>
+</html>
